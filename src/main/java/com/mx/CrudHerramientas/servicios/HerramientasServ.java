@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.mx.CrudHerramientas.entity.Herramientas;
 
+//AQUI MODIFIQUE YO
 public interface HerramientasServ {
 	public boolean guardar(Herramientas herramienta);
 
