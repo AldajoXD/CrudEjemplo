@@ -24,13 +24,13 @@ public class HerramientasWs {
 	HerramientaServImp impHerramientaServImp;
 
 	// http://localhost:9000/HerramientasWs/listar
-	@GetMapping("listar")
+	@GetMapping("mostrar")
 	public List<Herramientas> listar() {
 		return impHerramientaServImp.listar();
 	}
 
 	// http://localhost:9000/HerramientasWs/guardar
-	@PostMapping("guardar")
+	@PostMapping("salvar")
 	public ResponseEntity<String> guardar(@RequestBody Herramientas herramienta) {
 		var respuesta = new ResponseEntity<String>("Se guardo la herramienta", HttpStatus.OK);
 		if (impHerramientaServImp.guardar(herramienta) == true) {
